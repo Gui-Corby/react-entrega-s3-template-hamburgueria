@@ -1,0 +1,142 @@
+@import "../../styles/typograph.scss";
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+
+    .dialog {
+        margin-left: 30%;
+        margin-top: 5%;
+
+        background-color: white;
+       
+        max-height: 70vh;
+        overflow: auto;
+        overflow-x: hidden;
+
+        border-radius: 5px;
+
+        inset: 0;
+        width: 481px;
+
+        .modal_title {
+            background-color: var(--color-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 57px;
+            padding: 0 .9375rem;
+
+            h2 {
+                @extend %title;
+                color: white;
+            }
+
+            button {
+                color: #FFFFFF;
+            }
+        }
+
+
+        .checkout {
+
+            padding: 0 .9375rem;
+
+            margin-top: 1rem;
+
+            span {
+                @extend %paragraph;
+                font-weight: 600;
+                font-size: .875rem;
+                padding-top: 1rem;
+
+            }
+
+            .total {
+                color: var(--color-gray-600);
+            }
+
+            .checkout_border {
+                display: flex;
+                justify-content: space-between;
+                border-top: 2px solid var(--grey-100);
+            }
+        }
+
+
+        .remove_all_button {
+            height: 3rem;
+            width: 28.375rem;
+            margin: 0 .9375rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            background-color: #bdbdbd;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+
+
+        }
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .overlay {
+
+        .dialog {
+           margin-left: 3%;
+        
+           width: 24.75rem;
+    
+           .remove_all_button {
+              width: -webkit-fill-available;
+           }
+        }
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .overlay {
+
+        .dialog {
+           margin-left: 4%;
+           width: 21.5625rem;
+    
+           .remove_all_button {
+              width: -webkit-fill-available;
+           }
+        }
+
+    }
+
+}
+
+
+@media (max-width: 320px) {
+
+    .overlay {
+
+        .dialog {
+           margin-left: 0%;
+           width: 20.6875rem;
+    
+           .remove_all_button {
+              width: -webkit-fill-available;
+           }
+        }
+
+    }
+
+}

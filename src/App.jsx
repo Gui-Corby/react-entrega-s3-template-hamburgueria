@@ -1,6 +1,8 @@
+import "./styles/index.scss";
+
 import { HomePage } from "./pages/HomePage"
 
-function App() {
+export const App = () => {
   return (
     <>
       <HomePage />

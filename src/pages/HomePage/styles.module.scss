@@ -1,0 +1,8 @@
+@media (max-width: 425px) {
+    main {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        width: 100vw;
+
+    }
+}
