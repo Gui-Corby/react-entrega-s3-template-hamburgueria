@@ -7,17 +7,15 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-   
+
 
     .dialog {
         margin-left: 30%;
         margin-top: 5%;
 
         background-color: white;
-       
+
         max-height: 70vh;
-        overflow: auto;
-        overflow-x: hidden;
 
         border-radius: 5px;
 
@@ -40,6 +38,11 @@
             button {
                 color: #FFFFFF;
             }
+        }
+
+        ul {
+            overflow: auto;
+            max-height: calc(70vh - 200px);
         }
 
 
@@ -85,21 +88,38 @@
         }
     }
 
-
 }
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .overlay {
+
+      .dialog {
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 20%;
+         left: 50%;
+         width: 80%; 
+         max-width: 481px;
+
+         .remove_all_button {
+            width: -webkit-fill-available;
+         }
+       }
+     }
+   }
 
 @media (max-width: 425px) {
 
     .overlay {
 
         .dialog {
-           margin-left: 3%;
-        
-           width: 24.75rem;
-    
-           .remove_all_button {
-              width: -webkit-fill-available;
-           }
+            margin-left: 3%;
+
+            width: 24.75rem;
+
+            .remove_all_button {
+                width: -webkit-fill-available;
+            }
         }
 
     }
@@ -111,12 +131,12 @@
     .overlay {
 
         .dialog {
-           margin-left: 4%;
-           width: 21.5625rem;
-    
-           .remove_all_button {
-              width: -webkit-fill-available;
-           }
+            margin-left: 4%;
+            width: 21.5625rem;
+
+            .remove_all_button {
+                width: -webkit-fill-available;
+            }
         }
 
     }
@@ -129,12 +149,12 @@
     .overlay {
 
         .dialog {
-           margin-left: 0%;
-           width: 20.6875rem;
-    
-           .remove_all_button {
-              width: -webkit-fill-available;
-           }
+            margin-left: 0%;
+            width: 20.6875rem;
+
+            .remove_all_button {
+                width: -webkit-fill-available;
+            }
         }
 
     }

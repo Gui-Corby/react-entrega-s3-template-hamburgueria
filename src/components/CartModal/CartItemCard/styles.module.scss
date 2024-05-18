@@ -12,7 +12,7 @@
 
     .left_side {
         display: flex;
-        gap: 20px;
+        gap: .375rem;
 
     }
 
@@ -53,5 +53,19 @@
         align-self: flex-end;
         padding-right: 1rem;
 
+    }
+}
+
+@media (max-width: 320px) { 
+
+.dialog {
+    width: 19.6875rem;
+}
+
+    .cart_item {
+        button {
+            margin-left: .375rem;
+            padding-right: 0;
+        }
     }
 }
